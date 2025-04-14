@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Zeal Institute Alumni Network</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span>ZEAL</span> Alumni
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html" class="active">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="dashboard.html" id="dashboard-link">Dashboard</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="auth-container">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <h1>Create Account</h1>
+                    <p>Join the Zeal Institute alumni network today</p>
+                </div>
+
+                <form id="register-form">
+                    <div class="form-group">
+                        <input type="text" id="fullname" placeholder="Full Name" required>
+                        <div class="error-message" id="fullname-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email Address" required>
+                        <div class="error-message" id="email-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="password" placeholder="Password" required>
+                        <div class="error-message" id="password-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+                        <div class="error-message" id="confirm-password-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <select id="graduation-year" required>
+                            <option value="" disabled selected>Graduation Year</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="earlier">Earlier than 2015</option>
+                        </select>
+                        <div class="error-message" id="graduation-year-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <select id="department" required>
+                            <option value="" disabled selected>Department</option>
+                            <option value="Computer Engineering">Computer Engineering</option>
+                            <option value="Information Technology">Information Technology</option>
+                            <option value="Mechanical Engineering">Mechanical Engineering</option>
+                            <option value="Electrical Engineering">Electrical Engineering</option>
+                            <option value="Civil Engineering">Civil Engineering</option>
+                            <option value="Electronics Engineering">Electronics Engineering</option>
+                            <option value="Chemical Engineering">Chemical Engineering</option>
+                            <option value="Business Administration">Business Administration</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <div class="error-message" id="department-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="expertise" placeholder="Areas of expertise (comma separated)" required>
+                        <div class="error-message" id="expertise-error"></div>
+                    </div>
+                    <button type="submit" class="btn-primary">Create Account</button>
+                </form>
+                <div class="auth-footer">
+                    Already have an account? <a href="login.html">Login here</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/auth.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html> 
